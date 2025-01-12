@@ -1,0 +1,151 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    background-color: #141414;
+    border-bottom: 1px solid #262626;
+}
+
+.header-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.header-left-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.header-left-content h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.menu-content.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 95.7%;
+    background-color: #141414;
+    padding: 10px;
+    border-top: 1px solid #262626;
+}
+
+.searchbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 5px;
+}
+
+.searchbar {
+    background-color: #262626;
+    padding: 1rem;
+    border: none;
+    color: white
+    /* max-width: 400px; */
+}
+
+.logout-btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.logout-btn {
+    background-color: #f52828;
+    padding: 8px 12px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 44px;
+    cursor: pointer;
+}
+
+.search-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn button {
+    background-color: #262626;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    color: #757575;
+}
+
+.glass-icon {
+    padding-right: 5px;
+}
+
+.favorites-btn {
+    background-color: #f52828;
+    padding: 8px 12px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 44px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-content {
+        display: none;
+    }
+
+    .menu-content.open {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .searchbar-container {
+        width: 100%;
+    }
+
+    .searchbar {
+        width: 100%;
+    }
+}
